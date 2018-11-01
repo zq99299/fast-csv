@@ -11,6 +11,7 @@ load csv  file for Mycat
 
 解析过程按 byte 解析，不涉及到文件编码，一行的结果是 List<byte[]>
 
+本工具适合用在读取解析 程序生成的 csv 文件的场景
 ## 使用示例
 
 InputStream File
