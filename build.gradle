@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'cn.mrcode.mycat'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.25'
+    testCompileOnly 'junit:junit:4.12'
+    testCompileOnly 'org.apache.commons:commons-lang3:3.8.1'
+    testCompileOnly 'ch.qos.logback:logback-core:1.1.7'
+    testCompileOnly 'ch.qos.logback:logback-classic:1.1.7'
+    testCompileOnly 'org.apache.commons:commons-csv:1.6'
+}
