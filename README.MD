@@ -14,6 +14,18 @@ load csv  file for Mycat
 本工具适合用在读取解析 程序生成的 csv 文件的场景
 ## 使用示例
 
+```xml
+<dependency>
+  <groupId>cn.mrcode.mycat</groupId>
+  <artifactId>fast-csv</artifactId>
+  <version>0.1.0</version>
+</dependency>
+
+或则
+
+compile 'cn.mrcode.mycat:fast-csv:0.1.0'
+```
+
 InputStream File
 ```java
 CsvReader reader = DefaultCsvReader.from(Paths.get(path));
