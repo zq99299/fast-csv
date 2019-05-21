@@ -13,6 +13,7 @@ load csv  file for Mycat
 
 本工具适合用在读取解析 程序生成的 csv 文件的场景
 ## 使用示例
+mavn 仓库连接：https://mvnrepository.com/search?q=mrcode
 
 ```xml
 <dependency>
