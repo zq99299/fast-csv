@@ -29,7 +29,7 @@ public class CsvWriterTest {
         writer.newLine();
 
         writer.write("001".getBytes(), false);
-        // 该字段被完美还原了。但是
+        // 该字段被完美还原了。但是在控制台会看到有换行的迹象
         byte[] bytes = "朱\r\n强\r\"".getBytes();
         writer.write(bytes, false);
         writer.write("27".getBytes(), true);
