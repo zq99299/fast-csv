@@ -31,6 +31,9 @@ public class CsvWriterTest {
 
         writer.write("001".getBytes(), false);
         // 该字段被完美还原了。但是在控制台会看到有换行的迹象
+        // 如果使用这段 "朱\r\n强\r\n\"" 显示就没有问题了
+        // 这个是因为换行符不正确的情况，要么 windows 的 \r\n 要么是 unix 中的 \n
+        // 而这里是 \r 所以本身就是有问题的
         byte[] bytes = "朱\r\n强\r\"".getBytes();
         writer.write(bytes, false);
         writer.write("27".getBytes(), true);
